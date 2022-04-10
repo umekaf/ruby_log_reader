@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module LogReader
-  LineContentSeparator = Struct.new(:path, :ip)
+  LineContentSegregator = Struct.new(:path, :ip)
 end
