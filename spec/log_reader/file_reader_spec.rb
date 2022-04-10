@@ -2,12 +2,12 @@
 
 RSpec.describe LogReader::FileReader do
   let(:reader) { described_class.new(path) }
-  let(:path) { File.expand_path('fixtures/sample.log', __dir__) }
+  let(:path) { File.expand_path('../fixtures/sample.log', __dir__) }
 
   describe '#file_lines' do
     subject(:file_lines) { reader.file_lines }
 
-    let(:expected_result) { ['home 1', 'about 2', 'services 3', 'contact 4'] }
+    let(:expected_result) { ['home 1', 'about 2', 'service 3', 'contact 4'] }
 
     it { is_expected.to eq(expected_result) }
 

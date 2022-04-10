@@ -6,6 +6,18 @@ module LogReader
       @path = path
     end
 
-    def file_lines; end
+    attr_reader :path
+
+    def file_lines
+      requested_file.map(&:chomp)
+    end
+
+    private
+
+    def requested_file
+      File.open(path)
+    rescue Errno::ENOENT => e
+      raise LogReader::Error, e.message
+    end
   end
 end
