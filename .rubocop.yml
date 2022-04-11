@@ -22,3 +22,6 @@ Lint/AmbiguousBlockAssociation:
     - spec/**/*
 Style/Documentation:
   Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
