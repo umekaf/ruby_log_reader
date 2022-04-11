@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-RSpec.describe LogReader::CollectionSortor do
+RSpec.describe LogReader::SortCollection do
   let(:result) { described_class[grouped_entries] }
   let(:grouped_entries) do
     {

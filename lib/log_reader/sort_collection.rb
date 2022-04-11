@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module LogReader
-  class CollectionSortor < Hash
+  class SortCollection < Hash
     def sort_by_total_views
       sort_by { |_, views| -views.total }
     end
