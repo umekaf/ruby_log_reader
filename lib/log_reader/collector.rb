@@ -2,8 +2,17 @@
 
 module LogReader
   class Collector
-    def initialize(content); end
+    def initialize(contents)
+      @contents = contents
+    end
 
-    def group; end
+    attr_reader :contents
+
+    def group
+      contents.each_with_object({}) do |content, collection|
+        collection[content.path] ||= Aggregator.new
+        collection[content.path].call(content)
+      end
+    end
   end
 end
