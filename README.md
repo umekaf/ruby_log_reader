@@ -22,8 +22,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Steps:
+To test the application:
+1. get the file path
+3. execute ```./exe/log_reader file_path```
 
+To run the test:
+1. get into the application and run.
+```rspec```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
