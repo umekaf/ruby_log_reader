@@ -8,6 +8,7 @@ require 'log_reader/aggregator'
 require 'log_reader/collector'
 require 'log_reader/sort_collection'
 require 'log_reader/response_formatter'
+require 'log_reader/reader'
 
 module LogReader
   class Error < StandardError; end

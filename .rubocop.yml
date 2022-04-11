@@ -25,3 +25,6 @@ Style/Documentation:
 
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
+
+Naming/HeredocDelimiterNaming:
+  Enabled: false
